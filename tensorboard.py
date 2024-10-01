@@ -1,3 +1,6 @@
+"""
+
+
 import csv
 import os
 from tensorboardX import SummaryWriter
@@ -7,7 +10,7 @@ import numpy as np
 # Set the path to your results.csv and the directory for TensorBoard logs
 results_csv_path = 'runs/train/exp/results.csv' 
 log_dir = 'runs/train/exp/tensorboard'
-image_path = 'runs/train/exp/PR_curve.png'
+# image_path = 'runs/train/exp/PR_curve.png'
 
 # Initialize the TensorBoard writer
 writer = SummaryWriter(log_dir=log_dir)
@@ -58,10 +61,13 @@ with open(results_csv_path, mode='r') as file:
         writer.add_scalar('Precision-Recall/Recall', recall , epoch)
 
         # Load the image and add it to TensorBoard
-        if epoch == 0:  # Only log the image once at the first epoch
-            image = Image.open(image_path)
-            image_np = np.array(image)
-            writer.add_image('Precision-Recall/Y1', image_np, epoch, dataformats='HWC')
+        # if epoch == 0:  # Only log the image once at the first epoch
+        #     image = Image.open(image_path)
+        #     image_np = np.array(image)
+        #     writer.add_image('Precision-Recall/Y1', image_np, epoch, dataformats='HWC')
 
 # Close the TensorBoard writer
 writer.close()
+
+
+"""
