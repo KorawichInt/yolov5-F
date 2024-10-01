@@ -8,9 +8,9 @@
 
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
 # Y1
-path: dataset/ # dataset root dir
-train: train/train_list.txt # train images (relative to 'path') 128 images
-val: val/val_list.txt # val images (relative to 'path') 128 images
+path: dataset_wider_face/ # dataset root dir
+train: train/images # train images (relative to 'path') 128 images
+val: val/images # val images (relative to 'path') 128 images
 test: # test images (optional)
 
 # Y2
@@ -21,7 +21,7 @@ test: # test images (optional)
 
 # Classes
 names:
-  0: face
+  0: human_face
 
 
 
