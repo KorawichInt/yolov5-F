@@ -38,6 +38,8 @@ data/images/*
 !data/images/bus.jpg
 !data/*.sh
 
+dataset_wider_face/*
+
 # results*.csv
 
 # Datasets -------------------------------------------------------------------------------------------------------------
