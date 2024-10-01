@@ -21,7 +21,7 @@ test: # test images (optional)
 
 # Classes
 names:
-  0: human_face
+  0: face
 
 
 
